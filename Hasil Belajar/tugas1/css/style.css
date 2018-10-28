@@ -1,0 +1,27 @@
+
+ul {
+    margin: 1;
+    padding: 0;
+    width: 15.2%;
+    background-color: #ff7675 !important;
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 20px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #d63031;
+    color: white;
+}
+.active {
+    background-color: #d63031;
+    color: white;
+}

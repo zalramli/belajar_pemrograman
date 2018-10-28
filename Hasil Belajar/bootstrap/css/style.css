@@ -1,0 +1,20 @@
+
+section {
+	min-height: 420px;
+}
+body {
+	position: relative;
+}
+.navbar li a {
+	font-size: 20px;
+}
+
+#particles-js 
+{
+	height: 100%;
+	background-color: teal;
+	pointer-events: none;
+}
+section , footer {
+	padding :40px 0;
+}

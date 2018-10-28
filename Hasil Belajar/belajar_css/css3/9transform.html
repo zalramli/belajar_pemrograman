@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	.scale{
+		width: 200px;
+		height: 200px;
+		background-color: lightblue;
+		line-height: 200px;
+		text-align: center;
+		float: left;
+		margin: 50px 50px 0px 50px;
+		transition: 1s;
+	}
+	.scale:hover{
+		transform: scale(1.5);
+	}
+	.rotate{
+		width: 200px;
+		height: 200px;
+		background-color: lightgreen;
+		float: left;
+		margin: 50px 50px 0px 0px;
+		transition: 1s;
+	}
+	.rotate:hover{
+		transform: rotateY(180deg);
+	}
+	.skew{
+		width: 200px;
+		height: 200px;
+		background-color: yellow;
+		float: left;
+		margin : 50px 0px 0px 0px; 
+		transition: 1s;
+	}
+	.skew:hover{
+		transform: skewX(20deg);
+	}
+	.translate{
+		width: 200px;
+		height: 200px;
+		background-color: salmon;
+		float: left;
+		margin : 50px 50px 0px 50px;
+		transition: 1s;
+	}
+	.translate:hover{
+		transform: translate(0px,-60px);
+	}
+	</style>
+</head>
+<body>
+	<div class="scale">scale</div>
+	<div class="rotate">rotate</div>
+	<div class="skew">skew</div>
+	<div class="translate">translate</div>
+
+</body>
+</html>

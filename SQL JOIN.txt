@@ -1,0 +1,35 @@
+#Inner Join
+SELECT A.id_karyawan, A.id_rental, A.nama_karyawan, A.jenis_kelamin_karyawan, A.alamat_karyawan, A.no_hp_karyawan, B.nama_rental
+FROM karyawan AS A JOIN rental AS B
+ON A.id_rental = B.id_rental
+
+#Left Join
+SELECT A.id_karyawan, A.id_rental, A.nama_karyawan, A.jenis_kelamin_karyawan, A.alamat_karyawan, A.no_hp_karyawan, B.nama_rental
+FROM karyawan AS A LEFT JOIN rental AS B
+ON A.id_rental = B.id_rental
+
+#Right Join
+SELECT A.id_karyawan, A.id_rental, A.nama_karyawan, A.jenis_kelamin_karyawan, A.alamat_karyawan, A.no_hp_karyawan, B.nama_rental
+FROM rental AS B  RIGHT JOIN karyawan AS A
+ON A.id_rental = B.id_rental
+
+#Cross Join
+SELECT A.id_karyawan, A.id_rental, A.nama_karyawan, A.jenis_kelamin_karyawan, A.alamat_karyawan, A.no_hp_karyawan, B.nama_rental
+FROM karyawan AS A CROSS JOIN rental AS B
+Hasil Croos join ini dilihat jumlah row (baris) tabel 1 * tabel 2
+
+#Natural Join
+SELECT tabel.field
+FROM tabel1,tabel2
+WHERE tabel1.primary=tabel2.foreign
+
+#Straight Join
+SELECT * FROM karyawan STRAIGHT_JOIN rental
+
+#Equi Join
+SELECT rental.nama_rental,karyawan.nama_karyawan, karyawan.alamat_karyawan FROM rental,karyawan WHERE rental.alamat_rental=karyawan.alamat_karyawan
+
+#Non Equi Join
+SELECT a.nama_supir,a.alamat_supir,b.nopol,b.merk_mobil FROM supir a,mobil b WHERE a.harga_supir BETWEEN b.harga_mobil AND b.harga_mobil
+ 
+
